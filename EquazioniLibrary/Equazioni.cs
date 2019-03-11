@@ -8,10 +8,17 @@ namespace EquazioniLibrary
 {
     public class Equazioni
     {
-        public static bool Controllo(int n1, bool Risultato)
+        public static bool IsDetermined(int x, bool Risultato)
         {
-            if (n1 != 0) Risultato = true;
+            if (x != 0) Risultato = true;
 
+            return Risultato;
+        }
+
+        public static bool IsInconsisted(int x, bool Risultato)
+        {
+            if (x == 0) Risultato = true;
+        
             return Risultato;
         }
     }

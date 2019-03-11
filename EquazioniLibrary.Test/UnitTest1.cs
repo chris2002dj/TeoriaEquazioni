@@ -7,13 +7,25 @@ namespace EquazioniLibrary.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void IsDetermined()
         {
             bool Risultato = false;
 
-            int n1 = 1;
+            int x = 2;
 
-            bool Controllo = EquazioniLibrary.Equazioni.Controllo(n1, Risultato);
+            bool Controllo = EquazioniLibrary.Equazioni.IsDetermined(x, Risultato);
+
+            Assert.AreEqual(Risultato, Controllo);
+        }
+
+        [TestMethod]
+        public void IsInconsisted()
+        {
+            bool Risultato = false;
+
+            int x = 0;
+
+            bool Controllo = EquazioniLibrary.Equazioni.IsInconsisted(x, Risultato);
 
             Assert.AreEqual(Risultato, Controllo);
         }
