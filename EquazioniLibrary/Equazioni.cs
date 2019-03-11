@@ -35,5 +35,15 @@ namespace EquazioniLibrary
 
             return Risultato;
         }
+
+
+        public static string EquationDegree1(double a, double b, double x, string Risultato)
+        {
+            if (a == 0 && b == 0) Risultato = "Indeterminato";
+            if (a != 0 && b != 0) Risultato = "Impossibile";
+            if (a != 0 && b != 0 && x != 0) Risultato = "Detrminato";
+
+            return Risultato;
+        }
     }
 }

@@ -56,5 +56,19 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(Risultato, Controllo);
         }
 
+
+        [TestMethod]
+        public void EquationDegree1()
+        {
+            string Risultato = "";
+
+            double a = 3, b = 2, x = 0;
+
+            string Controllo = EquazioniLibrary.Equazioni.EquationDegree1(a, b, x, Risultato);
+
+            Assert.AreEqual(Risultato, Controllo);
+
+        }
+
     }
 }
