@@ -44,5 +44,17 @@ namespace EquazioniLibrary.Test
 
             Assert.AreEqual(Risultato, Controllo);
         }
+
+
+        [TestMethod]
+        public void Delta()
+        {
+            double Risultato = 0, a = 2, b = 3, c = 4;
+
+            double Controllo = EquazioniLibrary.Equazioni.Delta(a, b, c, Risultato);
+
+            Assert.AreEqual(Risultato, Controllo);
+        }
+
     }
 }

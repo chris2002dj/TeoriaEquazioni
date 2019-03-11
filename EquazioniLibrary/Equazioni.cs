@@ -28,5 +28,12 @@ namespace EquazioniLibrary
 
             return Risultato;
         }
+
+        public static double Delta(double a, double b, double c, double Risultato)
+        {
+            Risultato = b * b - 4 * a * c;
+
+            return Risultato;
+        }
     }
 }
