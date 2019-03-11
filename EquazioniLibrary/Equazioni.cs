@@ -8,17 +8,24 @@ namespace EquazioniLibrary
 {
     public class Equazioni
     {
-        public static bool IsDetermined(int x, bool Risultato)
+        public static bool IsDetermined(double x, bool Risultato)
         {
             if (x != 0) Risultato = true;
 
             return Risultato;
         }
 
-        public static bool IsInconsisted(int x, bool Risultato)
+        public static bool IsInconsisted(double x, bool Risultato)
         {
             if (x == 0) Risultato = true;
         
+            return Risultato;
+        }
+
+        public static bool IsDegree2(double x, double y, double c, bool Risultato)
+        {
+            if (x == 0 && y == 0 && c == 0) Risultato = true;
+
             return Risultato;
         }
     }
